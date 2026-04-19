@@ -36,6 +36,10 @@ namespace HomeWork2_EF_Core_CodeFirst.Controllers
         [HttpGet("search")]
         public IActionResult GetName(string name)
         {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return BadRequest("請輸入收尋名稱");
+            }
             var search = _webContext.Book.Where(a => a.Title.Contains(name)).OrderByDescending(a => a.Price).ToList();
             return Ok(search);
         }
