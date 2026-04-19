@@ -1,7 +1,6 @@
-# Gemeni 針對EF Core CodeFisrㄔ基本操作(建立資料表、Controller基本Function讀取) 出一份實作功課
+# Gemeni 針對EF Core CodeFisrt基本操作(建立資料表、Controller基本Function讀取) 出一份實作功課
 
 ## 功能開發要求
-
 ### 第一階段：建立模型 (Model)
 * 請在你的專案 Models 資料夾下，新增一個 Book.cs 類別，並包含以下欄位：
   * Id: 整數 (自動跳號的主鍵)。
@@ -28,7 +27,7 @@
   * 2.條件查詢：GET /api/Books/expensive (使用 LINQ 找出價格大於 500 的所有書籍)。
   * 3.關鍵字搜尋：GET /api/Books/search?name=xxx (使用 LINQ 的 .Where() 與 .Contains() 找出書名包含關鍵字的書籍)。
 
- ### 實作小提醒
+### 實作小提醒
  * 練習 LINQ：在第四階段中，盡量不要只回傳全部，試著練習昨天學的 Where 和 OrderBy。
  * 觀察 SQL：如果你有開啟 Visual Studio 的「輸出」視窗，你可以觀察當你呼叫 API 時，EF Core 產生的 SQL 長什麼樣子。
 
